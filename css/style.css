@@ -74,3 +74,34 @@ header p {
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+/*基本資料*/
+.profile-box {
+  display: flex;
+  align-items: center;
+  background-color:#fffdfa;
+  border-radius: 3px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 60px auto;
+  max-width: 1000px;
+  gap: 40px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px; /* 弧度：可調整為 50% 變成圓形 */
+}
+
+.profile-info h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
