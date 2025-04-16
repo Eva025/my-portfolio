@@ -33,7 +33,10 @@ header p {
 
 /* 頂部導覽列 */
 .top-nav {
-  background-color:#8a7e66
+  position: sticky;     
+  top: 0;                
+  z-index: 1000;  
+  background-color:#8a7e66;
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -66,14 +69,6 @@ header p {
   color: #8a7e66 ;
 }
 
-.top-nav {
-  position: sticky;        
-  top: 0;                  
-  z-index: 1000;            
-  background-color: #8a7e66 ;
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
 /*基本資料*/
 .profile-box {
   display: flex;
@@ -100,6 +95,36 @@ header p {
   margin-bottom: 8px;
 }
 
+.profile-info p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/*經歷*/
+.profile-box {
+  display: flex;
+  align-items: center;
+  background-color:#fffdfa;
+  border-radius: 3px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 60px auto;
+  max-width: 1000px;
+  gap: 40px;
+}
+
+.profile-info h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.profile-info h5 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
 .profile-info p {
   font-size: 1.1rem;
   margin-bottom: 5px;
