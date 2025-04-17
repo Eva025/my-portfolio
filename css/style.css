@@ -1,3 +1,4 @@
+/* Reset 預設樣式 */
 * {
   margin: 0;
   padding: 0;
@@ -7,19 +8,16 @@
 body {
   font-family: 'Helvetica Neue', sans-serif;
   line-height: 1.6;
-  background-color: #fcfaf3;
+  background-color: #f2e9dc;
   color: #333;
-  padding: 0px;
 }
 
+/* 頁首區塊 */
 header {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #b0a88d );
+  background: linear-gradient(135deg, #cbb891, #b0a88d);
   color: white;
-  margin-top: 40px; 
-}
-
 }
 
 header h1 {
@@ -31,12 +29,12 @@ header p {
   font-size: 1.2rem;
 }
 
-/* 頂部導覽列 */
+/* 導覽列 */
 .top-nav {
-  position: sticky;     
-  top: 0;                
-  z-index: 1000;  
-  background-color:#8a7e66;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #8a7e66;
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -46,8 +44,6 @@ header p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 .top-nav li {
@@ -66,10 +62,10 @@ header p {
 
 .top-nav a:hover {
   background-color: white;
-  color: #8a7e66 ;
+  color: #8a7e66;
 }
 
-/*基本資料*/
+/* 共用的卡片樣式 */
 .profile-box {
   display: flex;
   align-items: center;
@@ -101,32 +97,4 @@ header p {
   color: #555;
 }
 
-/*經歷*/
-.profile-box {
-  display: flex;
-  align-items: center;
-  background-color:#fffdfa;
-  border-radius: 3px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 20px;
-  margin: 60px auto;
-  max-width: 1000px;
-  gap: 40px;
-}
-
-.profile-info h3 {
-  font-size: 1.3rem;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.profile-info h5 {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 5px;
-}
-.profile-info p {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-  color: #555;
-}
+/* 額外提供 lighter box 風格（個人簡介用*
